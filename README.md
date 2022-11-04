@@ -16,6 +16,6 @@ The above mentioned requirements can easily be achieved by using Ubuntu 22.04 LT
 
 ## Installation
 
-The easiest way to install Číselník is to use [Envoy](https://laravel.com/docs/9.x/envoy) script in [mfa-envoy](https://github.com/JanOppolzer/mfa-envoy) repository. That repository also contains configuration snippets for Apache and Shibboleth SP.
+The easiest way to install MFA is to use [Envoy](https://laravel.com/docs/9.x/envoy) script in [mfa-envoy](https://github.com/JanOppolzer/mfa-envoy) repository. That repository also contains configuration snippets for Apache and Shibboleth SP.
 
 To prepare the server for MFA, I am using an [Ansible](https://www.ansible.com) playbook that is currently not publicly available due to being part of our larger and internal mechanism, but I am willing to share it and definitelly will do that in the future.
