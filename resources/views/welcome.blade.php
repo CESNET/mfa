@@ -50,8 +50,7 @@
                 <hr class="hidden">
                 <p class="text-center opacity-75">
                     <small class="text-sm">
-                        <a class="hover:underline text-blue-500"
-                            href="{{ __('common.pii-link') }}">{{ __('common.pii-text') }}</a><br>
+                        {{ __('common.no-pii') }}<br>
                         &copy; 2022 <a class="hover:underline text-blue-500" href="https://www.cesnet.cz">CESNET</a>,
                         <a class="hover:underline text-blue-500" href="mailto:info@eduid.cz">info@eduid.cz</a>.
                     </small>
