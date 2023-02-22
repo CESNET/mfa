@@ -13,7 +13,7 @@ return [
     'login-mfa' => 'Login with MFA',
     'login' => 'Login',
     'mail' => 'email address',
-    'mfa_not_working' => 'Selected IdP doesn\'t supports REFEDS MFA.',
+    'mfa_not_working' => 'This IdP doesn\'t supports REFEDS MFA.',
     'mfa_working' => 'Your IdP supports REFEDS MFA.',
     'name' => 'Name',
     'no-pii' => 'This service does not process any personal information even after login.',

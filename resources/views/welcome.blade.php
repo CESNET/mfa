@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="sm:p-16 bg-gray-50 p-4 antialiased text-gray-700">
+<body class="sm:p-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-400 p-4 antialiased text-gray-700">
 
     <div class="max-w-screen-md mx-auto">
 
@@ -51,7 +51,8 @@
                 <p class="text-center opacity-75">
                     <small class="text-sm">
                         {{ __('common.no-pii') }}<br>
-                        &copy; 2022 <a class="hover:underline text-blue-500" href="https://www.cesnet.cz">CESNET</a>,
+                        &copy; 2022&ndash;{{ date('Y') }} <a class="hover:underline text-blue-500"
+                            href="https://www.cesnet.cz">CESNET</a>,
                         <a class="hover:underline text-blue-500" href="mailto:info@eduid.cz">info@eduid.cz</a>.
                     </small>
                 </p>
