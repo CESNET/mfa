@@ -1,0 +1,10 @@
+TARGET_SERVER=server.example.org
+TARGET_USER=web
+TARGET_DIR=mfa
+
+REPOSITORY=https://github.com/JanOppolzer/mfa
+
+APP_NAME=MFA
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://server.example.org
