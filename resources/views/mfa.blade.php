@@ -53,7 +53,16 @@
                         <tr
                             class="even:bg-gray-50 even:dark:bg-gray-900 even:dark:text-gray-400 even:text-gray-700 hover:bg-blue-100 dark:hover:bg-indigo-300 dark:hover:text-gray-800">
                             <td class="whitespace-nowrap px-6 py-3 text-sm">{{ $key }}</td>
-                            <td class="whitespace-nowrap px-6 py-3 text-sm">{{ urldecode($value) }}</td>
+                            <td class="whitespace-nowrap px-6 py-3 text-sm">
+                                @if (Str::contains(urldecode($value), '@'))
+                                    <a class="text-blue-500 underline"
+                                        href="mailto:{{ Str::remove('mailto:', urldecode($value)) }}?subject=MFA">
+                                        {{ Str::remove('mailto:', urldecode($value)) }}
+                                    </a>
+                                @else
+                                    {{ urldecode($value) }}
+                                @endif
+                            </td>
                         </tr>
                     @empty
                         <tr
