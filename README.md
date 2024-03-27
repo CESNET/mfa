@@ -119,7 +119,7 @@ The destination host should be running Ubuntu 22.04 LTS (Jammy Jellyfish) with P
 Clone this repository:
 
 ```bash
-git clone https://github.com/JanOppolzer/mfa
+git clone https://github.com/CESNET/mfa
 ```
 
 Install PHP dependencies:
@@ -137,7 +137,7 @@ cp envoy.example envoy
 Tweaking `envoy` file to your needs should be easy as all the variables within the file are self explanatory. Then just run the _deploy_ task.
 
 ```bash
-php vendor/bin/envoy run deploy
+./vendor/bin/envoy run deploy
 ```
 
 ### Tasks
@@ -149,7 +149,7 @@ There are two tasks available — `deploy` and `cleanup`.
 The `deploy` task simply deploys the current version available at the repository into timestamped directory and makes a symbolic link `current`. This helps you with rolling back to the previous version if you need to. Just `ssh` into your web server and create a symbolic link to any previous version still available.
 
 ```bash
-php vendor/bin/envoy run deploy
+./vendor/bin/envoy run deploy
 ```
 
 #### cleanup
@@ -157,7 +157,7 @@ php vendor/bin/envoy run deploy
 The `cleanup` task helps you keeping your destination directory clean by leaving only three latest versions (i.e. timestamped directories) available and deletes all the older versions.
 
 ```bash
-php vendor/bin/envoy run cleanup
+./vendor/bin/envoy run cleanup
 ```
 
 ### Why no stories?
