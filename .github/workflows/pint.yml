@@ -10,7 +10,7 @@ on:
 
 jobs:
   pint:
-    runs-on: ubunutu-24.04
+    runs-on: ubuntu-24.04
 
     name: Test code quality
 
