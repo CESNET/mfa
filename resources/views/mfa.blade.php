@@ -1,10 +1,3 @@
-@php
-    $_SERVER['Shib-AuthnContext-Class'] = 'shib-authncontext-class';
-    $_SERVER['Shib-Authentication-Method'] = 'shib-authentication-method';
-    $_SERVER['Shib-Authentication-Instant'] = 'shib-authentication-instant';
-    $_SERVER['Shib-Identity-Provider'] = 'shib-identity-provider';
-@endphp
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
