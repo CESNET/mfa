@@ -21,7 +21,7 @@ jobs:
           php-version: "8.3"
 
       - name: Checkout repository
-        user: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Install NPM dependencies
         run: npm install
