@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: ["./resources/**/*.blade.php"],
+export default {
+    content: ["./resources/views/**/*.blade.php"],
     theme: {
         extend: {},
     },
