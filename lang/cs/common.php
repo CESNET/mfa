@@ -2,20 +2,12 @@
 
 return [
     'attribute' => 'Atribut',
-    'blocked_account' => 'Váš účet byl zablokován.',
-    'blocked_info' => 'Pro více informací a potenciální odblokování Vašeho účtu nás, prosím, kontaktujte na',
-    'cn' => 'celé jméno',
     'congratulations' => 'Gratuluji!',
-    'contact' => 'V případě jakýchkoliv problémů nebo otázek nás, prosím, kontaktujte na',
     'description' => 'Pokud zvolíte IdP nepodporující profil REFEDS MFA, pravděpodobně se Vám zobrazí chyba. V takovém případě kontaktujte správce IdP a požádejte o <a class="hover:underline text-blue-500" href="https://www.eduid.cz/cs/tech/idp/shibboleth/mfa" target="_blank">nasazení MFA</a>.',
-    'email' => 'E-mailová adresa',
     'introduction' => 'Vítejte v aplikaci <em>MFA</em> (Multi Factor Authentication) určené pro testování podpory profilu <a class="hover:underline text-blue-500" href="https://refeds.org/profile/mfa" target="_blank">REFEDS MFA</a> na Poskytovatelích Identit (Identity Provider, IdP) ve federaci <a class="hover:underline text-blue-500" href="https://www.eduid.cz">eduID.cz</a>.',
     'login-mfa' => 'Přihlásit s MFA',
-    'login' => 'Přihlásit',
-    'mail' => 'e-mailová adresa',
     'mfa_not_working' => 'Zvolené IdP nepodporuje REFEDS MFA.',
-    'mfa_working' => 'Vaše IdP podporuje REFEDS MFA.',
-    'name' => 'Jméno',
+    'mfa_working' => 'Zvolené IdP podporuje REFEDS MFA.',
     'no-pii' => 'Tato služba nezpracovává žádné osobní údaje ani po přihlášení.',
     'shib-authentication-instant' => 'Shib-Authentication-Instant',
     'shib-authentication-method' => 'Shib-Authentication-Method',
@@ -23,6 +15,5 @@ return [
     'shib-identity-provider' => 'Shib-Identity-Provider',
     'sorry' => 'Škoda!',
     'switch_language' => 'Switch to English',
-    'uniqueid' => 'Unikátní ID',
     'value' => 'Hodnota',
 ];

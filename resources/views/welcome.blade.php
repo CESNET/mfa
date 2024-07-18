@@ -52,8 +52,8 @@
                     <small class="text-sm">
                         {{ __('common.no-pii') }}<br>
                         &copy; 2022&ndash;{{ date('Y') }} <a class="hover:underline text-blue-500"
-                            href="https://www.cesnet.cz">CESNET</a>,
-                        <a class="hover:underline text-blue-500" href="mailto:info@eduid.cz">info@eduid.cz</a>.
+                            href="https://www.cesnet.cz">CESNET</a> &middot;
+                        <a class="hover:underline text-blue-500" href="mailto:info@eduid.cz">info@eduid.cz</a>
                     </small>
                 </p>
             </footer>

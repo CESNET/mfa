@@ -1,23 +1,14 @@
 <?php
 
 use App\Services\ErrorService;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('language/{locale}', function ($locale = null) {
+Route::get('language/{language}', function ($locale = null) {
     if (isset($locale) && in_array($locale, config('app.locales'))) {
-        app()->setLocale($locale);
-        session()->put('locale', $locale);
+        App::setLocale($locale);
+        Session::put('locale', $locale);
     }
 
     return redirect()->back();
