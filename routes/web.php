@@ -14,6 +14,8 @@ Route::get('language/{language}', function ($locale = null) {
     return redirect()->back();
 });
 
+Route::view('up', 'health-up');
+
 Route::view('/', 'welcome');
 Route::view('login', 'mfa', ['e' => []]);
 Route::get('error', function () {
