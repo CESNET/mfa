@@ -2,15 +2,18 @@
 
 MFA (Multi Factor Authentication) is a [Laravel](https://laravel.com/)-based web application dedicated to test [REFEDS MFA](https://refeds.org/profile/mfa) profile support at Identity Providers (IdP) within [eduID.cz](https://www.eduid.cz) federation.
 
+![pint.yml](https://github.com/CESNET/mfa/actions/workflows/pint.yml/badge.svg)
+![release.yml](https://github.com/CESNET/mfa/actions/workflows/release.yml/badge.svg)
+
 ## Requirements
 
 This application is written in Laravel 11 and uses PHP version at least 8.2.
 
 Authentication is managed by locally running Shibboleth Service Provider, so Apache web server is highly recommended as there is an official Shibboleth module for Apache.
 
--   PHP 8.2
--   Shibboleth SP 3
--   Apache 2.4
+- PHP 8.2
+- Shibboleth SP 3
+- Apache 2.4
 
 The above mentioned requirements can easily be achieved by using Ubuntu 24.04 LTS (Noble Numbat). For those running older Ubuntu or Debian, [Ondřej Surý's PPA repository](https://launchpad.net/~ondrej/+archive/ubuntu/php/) might be very appreciated.
 
