@@ -129,6 +129,6 @@
 
 @task('cleanup')
     cd {{ $dir }}
-    find . -maxdepth 1 -name "20*" | sort | head -n -3 | xargs rm -rf
+    find . -maxdepth 1 -name "mfa*" | sort | head -n -6 | xargs rm -rf
     echo "Cleaned up all but the last 3 deployments."
 @endtask
