@@ -11,10 +11,10 @@
 
 <body class="sm:p-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-400 p-4 antialiased text-gray-700">
 
-    <div class="max-w-screen-md mx-auto">
+    <div class="max-w-(--breakpoint-md) mx-auto">
 
         <div
-            class="sm:p-8 dark:bg-gray-800 dark:border-gray-500 bg-gradient-to-br from-gray-100 dark:from-gray-800 to-gray-100 dark:to-gray-800 via-gray-200 dark:via-gray-900 p-4 bg-gray-100 border rounded shadow-md">
+            class="sm:p-8 dark:bg-gray-800 dark:border-gray-500 bg-linear-to-br from-gray-100 dark:from-gray-800 to-gray-100 dark:to-gray-800 via-gray-200 dark:via-gray-900 p-4 bg-gray-100 border rounded-sm shadow-md">
 
             <header>
                 <h1 class="sm:text-5xl pb-4 text-4xl font-bold tracking-wider">{{ config('app.name') }}</h1>
@@ -29,7 +29,7 @@
                 </p>
                 <p class="sm:text-lg leading-relaxed">{!! __('common.introduction') !!}</p>
                 <div
-                    class="bg-gradient-to-r from-gray-100 dark:from-gray-800 to-gray-100 dark:to-gray-800 via-gray-800 dark:via-gray-100 w-full h-px my-8">
+                    class="bg-linear-to-r from-gray-100 dark:from-gray-800 to-gray-100 dark:to-gray-800 via-gray-800 dark:via-gray-100 w-full h-px my-8">
                 </div>
                 <hr class="hidden">
             </header>
@@ -38,14 +38,14 @@
                 <p class="pb-4">{!! __('common.description') !!}</p>
 
                 <p class="sm:pt-10 pt-6 text-center">
-                    <a class="md:inline-block hover:bg-blue-600 text-blue-50 hover:shadow-lg block px-6 py-3 font-bold bg-blue-500 rounded shadow"
+                    <a class="md:inline-block hover:bg-blue-600 text-blue-50 hover:shadow-lg block px-6 py-3 font-bold bg-blue-500 rounded-sm shadow-sm"
                         href="/login">{{ __('common.login-mfa') }}</a>
                 </p>
             </main>
 
             <footer>
                 <div
-                    class="bg-gradient-to-r from-gray-100 dark:from-gray-800 to-gray-100 dark:to-gray-800 via-gray-300 dark:via-gray-600 w-full h-px mt-4 mb-3">
+                    class="bg-linear-to-r from-gray-100 dark:from-gray-800 to-gray-100 dark:to-gray-800 via-gray-300 dark:via-gray-600 w-full h-px mt-4 mb-3">
                 </div>
                 <hr class="hidden">
                 <p class="text-center opacity-75">
